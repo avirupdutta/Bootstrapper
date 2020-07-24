@@ -7,11 +7,532 @@
 		<link rel="stylesheet" href="static/css/main.css" />
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		<h2>Hello World!</h2>
-		<h3>Hello World!</h3>
-		<h4>Hello World!</h4>
-		<h5>Hello World!</h5>
-		<h6>Hello World!</h6>
+		<h1 class="display-4 text-center">Cheat Sheet</h1>
+		<hr />
+		<main class="container">
+			<div class="row">
+				<div class="col-4">
+					<h1>Header tags:-</h1>
+					<h1>1. h1</h1>
+					<h2>2. h2</h2>
+					<h3>3. h3</h3>
+					<h4>4. h4</h4>
+					<h5>5. h5</h5>
+					<h6>6. h6</h6>
+				</div>
+				<div class="col-4">
+					<h1>Paragraph tag:-</h1>
+					<p>
+						this is default style
+					</p>
+					<p class="lead">
+						With <code>.lead</code> Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Quis soluta fugiat neque?
+					</p>
+					<p class="muted">
+						With <code>.muted</code> Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Quis soluta fugiat neque?
+					</p>
+				</div>
+				<div class="col-3">
+					<h1>Anchor tag:-</h1>
+					<a href="#">
+						Hover to see the default style
+					</a>
+				</div>
+			</div>
+			<hr />
+			<h1>Buttons:-</h1>
+			<button class="btn btn-primary">.btn .btn-primary</button>
+			<button class="btn btn-secondary">.btn .btn-secondary</button>
+			<button class="btn btn-success">.btn .btn-success</button>
+			<button class="btn btn-warning">.btn .btn-warning</button>
+			<button class="btn btn-danger">.btn .btn-danger</button>
+			<button class="btn btn-info">.btn .btn-info</button>
+			<button class="btn btn-dark">.btn .btn-dark</button>
+			<br /><br />
+			<button class="btn btn-primary btn-sm">
+				.btn .btn-primary .btn-sm
+			</button>
+			<br /><br />
+			<button class="btn btn-primary btn-lg">
+				.btn .btn-primary .btn-lg
+			</button>
+			<br /><br />
+			<button class="btn btn-primary btn-block">
+				.btn .btn-primary .btn-block
+			</button>
+			<hr />
+			<h1>Images:-</h1>
+			<p class="muted">
+				w for width and then width in % (for example .w-100)
+			</p>
+			<div class="row">
+				<div class="col-3">
+					<img
+						class="w-100"
+						src="./static/images/demo-img.jpg"
+						alt=""
+					/>
+					<p>.w-100</p>
+				</div>
+				<div class="col-3">
+					<img
+						class="w-75"
+						src="./static/images/demo-img.jpg"
+						alt=""
+					/>
+					<p>.w-75</p>
+				</div>
+				<div class="col-3">
+					<img
+						class="w-50"
+						src="./static/images/demo-img.jpg"
+						alt=""
+					/>
+					<p>.w-50</p>
+				</div>
+				<div class="col-3">
+					<img
+						class="w-25"
+						src="./static/images/demo-img.jpg"
+						alt=""
+					/>
+					<p>.w-25</p>
+				</div>
+			</div>
+			<hr />
+			<h1>Input Fields:-</h1>
+			<br />
+			<h3>1. General</h3>
+			<p>
+				.form-control will take the width of the parent (by default body
+				has 100% width)
+			</p>
+			<input
+				type="text"
+				placeholder=".form-control - This parent has 100% width"
+				class="form-control"
+			/>
+			<div class="w-75">
+				<input
+					type="text"
+					placeholder=".form-control - This parent has 75% width"
+					class="form-control"
+				/>
+			</div>
+			<div class="w-50">
+				<input
+					type="text"
+					placeholder=".form-control - This parent has 50% width"
+					class="form-control"
+				/>
+			</div>
+			<div class="w-25">
+				<input
+					type="text"
+					placeholder=".form-control - This parent has 25% width"
+					class="form-control"
+				/>
+			</div>
+			<br />
+
+			<h3>2. Radio (showing default style)</h3>
+
+			<input type="radio" name="gender" id="male" value="male" />
+			<label for="male">Male</label>
+
+			<input type="radio" name="gender" id="female" value="female" />
+			<label for="female">Female</label>
+
+			<input type="radio" name="gender" id="other" value="other" />
+			<label for="other">Other</label>
+			<br /><br />
+
+			<h3>3. Checkboxes (showing default style)</h3>
+			<input type="checkbox" name="gender" id="conditions" value="male" />
+			<label for="conditions">I accept the all terms and conditons</label>
+			<br /><br />
+			<h3>4. Option Selection</h3>
+			<p>
+				Just add <code>.form-control</code> to <code>select</code> tag
+			</p>
+			<select name="country" class="form-control">
+				<option value="">-- Choose your country --</option>
+				<option value="india">India</option>
+				<option value="pakistan">Pakistan</option>
+				<option value="usa">USA</option>
+			</select>
+			<br /><br />
+			<p>
+				<strong>Note:</strong> You can put margin to improve spacings
+				between each input fields.
+			</p>
+			<hr />
+			<h1>Colors:-</h1>
+			<div class="row">
+				<div class="col-4">
+					<h3>Text colors</h3>
+					<ul>
+						<li class="text-primary">.text-primary</li>
+						<li class="text-secondary">.text-secondary</li>
+						<li class="text-success">.text-success</li>
+						<li class="text-warning">.text-warning</li>
+						<li class="text-danger">.text-danger</li>
+						<li class="text-info">.text-info</li>
+						<li class="text-dark">.text-dark</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h3>Other available colors</h3>
+					<p style="color: var(--blue);">var(--blue);</p>
+					<p style="color: var(--indigo);">var(--indigo);</p>
+					<p style="color: var(--purple);">var(--purple);</p>
+					<p style="color: var(--red);">var(--red);</p>
+					<p style="color: var(--orange);">var(--orange);</p>
+					<p style="color: var(--yellow);">var(--yellow);</p>
+					<p style="color: var(--green);">var(--green);</p>
+					<p style="color: var(--teal);">var(--teal);</p>
+					<p style="color: var(--gray);">var(--gray);</p>
+					<p style="color: var(--gray-dark);">var(--gray-dark);</p>
+					<p>
+						<span
+							style="color: var(--white); background-color: black;"
+							>var(--white);</span
+						>
+						this is how it looks on dark background
+					</p>
+				</div>
+				<div class="col-4">
+					<h3>Background Colors</h3>
+					<div class="bg-primary p-4 mt-2 mb-2 text-white">
+						.bg-primary
+					</div>
+					<div class="bg-secondary p-4 mt-2 mb-2 text-white">
+						.bg-secondary
+					</div>
+					<div class="bg-dark p-4 mt-2 mb-2 text-white">.bg-dark</div>
+				</div>
+			</div>
+			<hr />
+			<h1>Margins:-</h1>
+			<h3>Margin all around</h3>
+			<ul>
+				<li><code>.m-auto</code> = margin: auto !important;</li>
+				<li><code>.m-0</code> = margin: 0.00rem !important;</li>
+				<li><code>.m-1</code> = margin: 0.25rem !important;</li>
+				<li><code>.m-2</code> = margin: 0.50rem !important;</li>
+				<li><code>.m-3</code> = margin: 1.00rem !important;</li>
+				<li><code>.m-4</code> = margin: 1.50rem !important;</li>
+				<li><code>.m-5</code> = margin: 3.00rem !important;</li>
+			</ul>
+			<br />
+			<div class="row">
+				<div class="col-3">
+					<h3>Margin Top only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.mt-auto or .my-auto</code> = margin-top: auto
+							!important;
+						</li>
+						<li>
+							<code>.mt-0 or .my-0</code> = margin-top: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mt-1 or .my-1</code> = margin-top: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.mt-2 or .my-2</code> = margin-top: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mt-3 or .my-3</code> = margin-top: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mt-4 or .my-4</code> = margin-top: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mt-5 or .my-5</code> = margin-top: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Margin Right only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.mr-auto or .mx-auto</code> = margin-right:
+							auto !important;
+						</li>
+						<li>
+							<code>.mr-0 or .mx-0</code> = margin-right: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mr-1 or .mx-1</code> = margin-right: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.mr-2 or .mx-2</code> = margin-right: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mr-3 or .mx-3</code> = margin-right: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mr-4 or .mx-4</code> = margin-right: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mr-5 or .mx-5</code> = margin-right: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Margin Bottom only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.mb-auto or .my-auto</code> = margin-bottom:
+							auto !important;
+						</li>
+						<li>
+							<code>.mb-0 or .my-0</code> = margin-bottom: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mb-1 or .my-1</code> = margin-bottom: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.mb-2 or .my-2</code> = margin-bottom: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mb-3 or .my-3</code> = margin-bottom: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.mb-4 or .my-4</code> = margin-bottom: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.mb-5 or .my-5</code> = margin-bottom: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Margin Left only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.ml-auto or .mx-auto</code> = margin-left:
+							auto !important;
+						</li>
+						<li>
+							<code>.ml-0 or .mx-0</code> = margin-left: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.ml-1 or .mx-1</code> = margin-left: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.ml-2 or .mx-2</code> = margin-left: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.ml-3 or .mx-3</code> = margin-left: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.ml-4 or .mx-4</code> = margin-left: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.ml-5 or .mx-5</code> = margin-left: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<h1>Paddings:-</h1>
+			<h3>Padding all around</h3>
+			<ul>
+				<li><code>.p-auto</code> = padding: auto !important;</li>
+				<li><code>.p-0</code> = padding: 0.00rem !important;</li>
+				<li><code>.p-1</code> = padding: 0.25rem !important;</li>
+				<li><code>.p-2</code> = padding: 0.50rem !important;</li>
+				<li><code>.p-3</code> = padding: 1.00rem !important;</li>
+				<li><code>.p-4</code> = padding: 1.50rem !important;</li>
+				<li><code>.p-5</code> = padding: 3.00rem !important;</li>
+			</ul>
+			<br />
+			<div class="row">
+				<div class="col-3">
+					<h3>Padding Top only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.pt-auto or .py-auto</code> = padding-top:
+							auto !important;
+						</li>
+						<li>
+							<code>.pt-0 or .py-0</code> = padding-top: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pt-1 or .py-1</code> = padding-top: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.pt-2 or .py-2</code> = padding-top: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pt-3 or .py-3</code> = padding-top: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pt-4 or .py-4</code> = padding-top: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pt-5 or .py-5</code> = padding-top: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Padding Right only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.pr-auto or .px-auto</code> = padding-right:
+							auto !important;
+						</li>
+						<li>
+							<code>.pr-0 or .px-0</code> = padding-right: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pr-1 or .px-1</code> = padding-right: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.pr-2 or .px-2</code> = padding-right: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pr-3 or .px-3</code> = padding-right: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pr-4 or .px-4</code> = padding-right: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pr-5 or .px-5</code> = padding-right: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Padding Bottom only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.pb-auto or .py-auto</code> = padding-bottom:
+							auto !important;
+						</li>
+						<li>
+							<code>.pb-0 or .py-0</code> = padding-bottom:
+							0.00rem !important;
+						</li>
+						<li>
+							<code>.pb-1 or .py-1</code> = padding-bottom:
+							0.25rem !important;
+						</li>
+						<li>
+							<code>.pb-2 or .py-2</code> = padding-bottom:
+							0.50rem !important;
+						</li>
+						<li>
+							<code>.pb-3 or .py-3</code> = padding-bottom:
+							1.00rem !important;
+						</li>
+						<li>
+							<code>.pb-4 or .py-4</code> = padding-bottom:
+							1.50rem !important;
+						</li>
+						<li>
+							<code>.pb-5 or .py-5</code> = padding-bottom:
+							3.00rem !important;
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>Padding Left only</h3>
+					<ul class="clean-list">
+						<li>
+							<code>.pl-auto or .px-auto</code> = padding-left:
+							auto !important;
+						</li>
+						<li>
+							<code>.pl-0 or .px-0</code> = padding-left: 0.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pl-1 or .px-1</code> = padding-left: 0.25rem
+							!important;
+						</li>
+						<li>
+							<code>.pl-2 or .px-2</code> = padding-left: 0.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pl-3 or .px-3</code> = padding-left: 1.00rem
+							!important;
+						</li>
+						<li>
+							<code>.pl-4 or .px-4</code> = padding-left: 1.50rem
+							!important;
+						</li>
+						<li>
+							<code>.pl-5 or .px-5</code> = padding-left: 3.00rem
+							!important;
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<h1>Super helpful classes:-</h1>
+			<div class="row">
+				<div class="col-6">
+					<h3>Text transformations</h3>
+					<div class="bg-dark text-light p-3">
+						<p class="text-center">.text-center</p>
+						<p class="text-right">.text-right</p>
+						<p class="text-lowercase">.TEXT-LOWERCASE</p>
+						<p class="text-uppercase">.text-uppercase</p>
+						<p class="text-capitalize">.text-capitalize</p>
+					</div>
+				</div>
+				<div class="col-6">
+					<h3>Font Weights</h3>
+					<ul>
+						<li class="font-weight-lighter">
+							.font-weight-lighter
+						</li>
+						<li class="font-weight-normal">.font-weight-normal</li>
+						<li class="font-weight-bold">.font-weight-bold</li>
+						<li class="font-weight-bolder">.font-weight-bolder</li>
+					</ul>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>

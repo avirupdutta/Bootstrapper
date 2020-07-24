@@ -1,0 +1,17 @@
+{
+	"name": "vanilla-css-boilerplate",
+	"version": "1.0.0",
+	"description": "A very basic css boilerplate",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel serve index.html"
+	},
+	"keywords": [
+		"css",
+		"boilerplate",
+		"micro",
+		"library"
+	],
+	"author": "Avirup Dutta",
+	"license": "ISC"
+}
