@@ -12,6 +12,9 @@
 		"micro",
 		"library"
 	],
+	"devDependencies": {
+		"parcel": "1.12.4"
+	},
 	"author": "Avirup Dutta",
 	"license": "ISC"
 }
